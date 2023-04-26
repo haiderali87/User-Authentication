@@ -1,5 +1,106 @@
-*{
+@font-face {
+    font-family: 'poppins-regular';
+    src: url('../fonts/Poppins-Regular.ttf') format('ttf'),
+}
+@font-face {
+    font-family: 'poppins-medium';
+    src: url('../fonts/Poppins-Medium.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'poppins-semibold';
+    src: url('../fonts/Poppins-SemiBold.ttf') format('ttf');
+}
+@font-face {
+    font-family: 'poppins-bold';
+    src: url('../fonts/Poppins-Bold.ttf') format('ttf');
+}
+*   {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color:  #f0f2f5;
+}
+p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  font-family: 'poppins-regular',sans-serif;
+}
+  a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #000000;
+    transition: all 0.2s ease-in-out;
+  }
+  /* Buttons */
+  button,
+  input[type="button"],
+  input[type="submit"] {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover,
+  input[type="button"]:hover,
+  input[type="submit"]:hover {
+    background-color: #007bff;
+  }
+  .home-wrapper{
+    padding-block: 100px;
+  }
+  .home-wrapper .container{
+    padding-inline:80px;
+  }
+  .home-left-content h1{
+    color: #1877f2;
+    font-size: 42px;
+    font-weight: 700;
+    font-family: 'poppins-bold',sans-serif;
+  }
+  .home-left-content p{
+    font-size: 20px;
+  }
+  .home-right-content form{
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+  }
+  .home-right-content input[type="email"],
+  .home-right-content input[type="password"]{
+    padding: 14px 16px;
+  }
+  .home-right-content input[type="submit"]{
+    width: 100%;
+    font-size: 20px;
+    font-family: 'poppins-semibold',sans-serif;
+    display: inline-block;
+  }
+  .create-account-btn{
+    background: #42b72a;
+    padding: 11px 16px;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 6px;
+    display: inline-block;
+    font-family: 'poppins-semibold',sans-serif;
+  }
+  .create-account-btn:hover{
+    background-color: #36a420;
+    border-color: #36a420;
+    color: #ffffff;
+  }
+  @media (max-width:991.9px){
+    .home-left-content h1{
+      font-size: 32px;
+    }
+  }
