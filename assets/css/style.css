@@ -51,7 +51,8 @@ p{
   input[type="submit"]:hover {
     background-color: #007bff;
   }
-  .home-wrapper{
+  .home-wrapper,
+  .register-wrapper{
     padding-block: 100px;
   }
   .home-wrapper .container{
@@ -98,6 +99,25 @@ p{
     background-color: #36a420;
     border-color: #36a420;
     color: #ffffff;
+  }
+  /* register page  */
+  .register-form{
+    width: 50%;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+  }
+  .username input{
+    width: 48%;
+  }
+  .gender{
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 6px;
+    width: 48%;
   }
   @media (max-width:991.9px){
     .home-left-content h1{
